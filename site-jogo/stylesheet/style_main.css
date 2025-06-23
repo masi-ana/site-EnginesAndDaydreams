@@ -1,0 +1,170 @@
+:root{
+    --cor_1: black;
+    --cor_2: #b99268;
+    --cor_3: #704e44;
+    --cor_4: #373241;
+    --cor_5: white;
+}
+
+/*transfromação em responsivo*/
+@media (max-width: 900px) {
+   main {flex-direction: column;}
+   header{flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;}
+    .divisao{flex-direction: column;}
+    .portraits{flex-direction: column;
+                align-items: center;
+                justify-content: center;}
+
+}
+
+
+/*definições dos elementos nativos do html*/
+body{
+    background-color: var(--cor_1);
+    padding: 1%;
+
+    font-family: "Montserrat", serif;
+    font-weight: 400;
+    font-size: 1rem;
+
+}
+
+header{ 
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+    b{
+    font-size: 2.75rem;
+    font-weight: 800;
+
+    color: var(--cor_5);
+}
+    img{
+        width: 10%;
+    }
+
+}
+
+main{
+  display: flex;
+  padding: 2%;
+  margin: 1%;
+
+  border-radius: 3%;
+
+  background-color: var(--cor_4);
+  color: var(--cor_2);
+
+  text-align: justify;
+
+  h1{
+    padding: 1%;
+    margin-right: 3%;
+    
+    font-weight: 600;
+    font-size: 2rem;
+    
+    align-items: center;
+    text-align: center;
+
+  }
+
+  b{
+    font-weight: 600;
+    color: var(--cor_5);
+  }
+
+  img{
+    width: 100%;
+    height: 100%;
+  }
+
+}
+
+
+/*classes costumizadas principais*/
+.principal{
+  padding: 1%;
+
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.divisao{
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    width: 100%;
+    height: fit-content;
+}
+
+/*classe de redes sociais e paginas*/
+.redirect{
+    
+    flex-direction: column;
+
+    border: 0.3rem solid var(--cor_2);
+    border-radius: 1%;
+
+    padding: 1%;
+    margin: 0.5%; 
+    width: 20%;   
+
+    a{
+      
+        display: flex;
+        align-items: center;
+        margin: 1%;
+
+        color: var(--cor_5);
+        text-decoration: none;
+    }
+}
+
+/*classes para as imagens de logo, retratos e exemplo*/
+
+.logos{
+    align-items: center;
+    width: 20px;
+    margin-left: 5px;
+    
+}
+
+.portraits{
+    justify-content: center;
+    align-items: center;
+    margin: 2%;
+
+    display: flex;
+    border: 3px solid var(--cor_2);
+
+    p{
+        font-size: 2rem;
+        font-weight: bold;
+
+
+        padding: 3%;
+        flex-wrap: wrap;
+    }
+    img{
+        margin: 20px;
+        width: 30%;
+        height: 30%;
+
+    }
+}
+
+
+#jeff{
+    img{
+    rotate: 20rad;
+}}

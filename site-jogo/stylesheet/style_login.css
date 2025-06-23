@@ -1,0 +1,194 @@
+:root{
+    --cor_1: black;
+    --cor_2: #b99268;
+    --cor_3: #704e44;
+    --cor_4: #373241;
+    --cor_5: white;
+}
+
+@media (max-width: 900px) {
+   .principal {flex-direction: column-reverse;}
+   .container{ 
+    justify-content: center;
+    align-items: center;
+   }
+}
+
+/*definições dos elementos nativos do html*/
+
+body{
+    background-color: var(--cor_1);
+    color: var(--cor_2);
+
+    font-family: "Montserrat", serif;
+    font-weight: 400;
+    font-size: 0.75rem;;
+
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    #loginMain{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    margin: 1%;
+    }
+    
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+
+    #login{
+        input{
+            justify-content: center;
+            max-width: 500px;
+        }
+}
+
+}
+
+h1{
+    font-size: 3.5rem;
+    font-family: "Krona One", serif;  
+    font-weight: 600;
+    font-style: normal;
+}
+
+/*classes costumizadas principais*/
+
+.principal{
+  padding: 1rem;
+  border-radius: 2%;
+  margin: 2%;
+
+
+  align-items: center;
+
+  background-color: var(--cor_4);
+  display: flex;
+
+}
+
+
+.container{
+    max-width: 600px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.conteudo{
+  padding: 0.5rem;
+  text-align: start;
+
+  display:flex;
+  flex-direction:column;
+
+
+    input{
+    width: 100%;
+    max-width: 400px;
+
+    padding: 0.5rem;
+    margin: 0.5rem;
+    display: inline-block;
+
+    border: 2px solid var(--cor_3);
+
+
+    background: var(--cor_3);
+    }
+    input:focus{
+    background-color: var(--cor_2);
+    outline: none;
+
+    font-weight: 600;
+    }
+
+}
+
+.texto{
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+
+    padding: 2%;
+}
+
+/*classes costumizadas das paginas de confirmação de cadastro/login */
+
+.confirmation{
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: screen;
+
+    margin: 2%;
+
+    align-items: center;
+    justify-content: center;
+    
+    font-size: 120%;
+
+}
+
+/*classes costumizadas dos botões*/
+
+
+.registerbtn {
+  font-family: "Montserrat", serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+  
+  text-align: center;
+  align-items: center;
+
+  opacity: 1;
+  padding: 0.5rem;
+  border-radius: 2px;
+  width: 100%;
+  max-width: fit-content;
+  margin: 1%;
+
+
+  background-color: var(--cor_2);
+  color: var(--cor_3);
+  border: 0;
+
+}
+
+.registerbtn:hover {
+  opacity: 0.8;
+}
+
+
+.enterbtn {
+    font-weight: 400;
+    font-size: 1rem;
+    text-align: center;
+
+
+    padding: 1%;
+
+  
+    a{
+        color: var(--cor_4);
+        text-decoration: none;
+        font-style: none;
+
+    }
+
+
+
+}
+
+
+.engrenagens{
+    width: 1rem;
+}

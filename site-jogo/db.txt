@@ -1,0 +1,13 @@
+CREATE SCHEMA sitejogo;
+
+USE sitejogo;
+
+CREATE TABLE sitejogo(
+	id INT NOT NULL AUTO_INCREMENT,
+	nome VARCHAR(30),
+	email VARCHAR(50),
+	senha VARCHAR(30),
+	senha_rpt VARCHAR(30),
+
+	PRIMARY KEY (id)
+);
